@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir=t"rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Pokemon Magazine</title>
+  </head>
+
+  <body class="flex pt-20">
+    <button id="prev" class="bg-blue-500 text-white px-4 py-2 h-[50px] rounded relative top-1/2">
+      قبل
+    </button>
+
+    <div class="flipbook">
+      <div class="hard">
+        <img class="cover" src="images/image.png" alt="cover" />
+      </div>
+      <div class="hard"></div>
+      <!-- p1 -->
+      <div>
+        <div class="flex w-full mb-16">
+          <div class="bg-[#33B45C] w-1/12 h-[15px]"></div>
+          <div class="mx-2 w-[207px]">
+            <p class="text-xs font-bold">کتاب راهنمای برند شرکت نفس یار طب</p>
+            <p class="text-xs text-center mt-6">نسخه اول دی ماه 1399</p>
+          </div>
+          <div class="bg-[#283895] w-[364px] h-[15px]"></div>
+        </div>
+      </div>
+      <!-- p2 -->
+      <div>
+        <img class="cover" src="images/p1.png" alt="cover" />
+      </div>
+      <!-- p3 -->
+      <div>
+        <img class="cover" src="images/p2.png" alt="cover" />
+      </div>
+      <div>
+        <img class="cover" src="images/p3.png" alt="cover" />
+      </div>
+      <div>
+        <img class="cover" src="images/p4.png" alt="cover" />
+      </div>
+      <div>
+        <img class="cover" src="images/p5.png" alt="cover" />
+      </div>
+      <div class="hard"></div>
+      <div class="hard"></div>
+    </div>
+    <button id="next" class="bg-blue-500 text-white px-4 py-2 h-[50px] rounded relative top-1/2">
+      بعد
+    </button>
+
+    <script src="jquery.js"></script>
+    <script src="turn.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".flipbook").turn();
+
+        $("#next").click(function () {
+          $(".flipbook").turn("next");
+        });
+
+        $("#prev").click(function () {
+          $(".flipbook").turn("previous");
+        });
+      });
+    </script>
+  </body>
+</html>
