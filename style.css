@@ -34,21 +34,25 @@ body {
   background: #eaf6ff;
 }
 
-.cover {
+.flipbook {
+  width: 1240px!important;
+  height: 438px!important;
+}
+
+/* .cover {
   width: 100% !important;
   height: 100%;
-  object-fit: contain;
-}
-.flipbook {
-  width: 1240px;
-  height: 438px;
-}
+  object-fit: cover!important;
+} */
 
 .flipbook .hard {
   background: #283895 !important;
   color: #fff;
   font-weight: bold;
   border: none;
+  /* width: 600px!important; */
+  gap: 10;
+
 }
 
 .flipbook .page {
@@ -56,6 +60,9 @@ body {
   /* flex-direction: column; */
   justify-content: center;
   border: 1px solid rgba(0, 0, 0, 0.11);
+  /* width: 600px!important; */
+  gap: 10;
+
 }
 
 .p3{
@@ -65,11 +72,11 @@ body {
 
 }
 
-/* .page img {
-  width: 70%;
+.page>img {
+  width: 100%;
   object-fit: cover;
   margin: auto;
-} */
+}
 .text-nyt{
   font-size: 8px;
 }
