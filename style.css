@@ -65,8 +65,11 @@ body {
 
 }
 
-.page img {
+/* .page img {
   width: 70%;
   object-fit: cover;
   margin: auto;
+} */
+.text-nyt{
+  font-size: 8px;
 }
